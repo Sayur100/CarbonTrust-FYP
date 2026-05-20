@@ -22,5 +22,7 @@ To execute this local environment, the following must be installed:
 4. Open the provided localhost link (typically http://localhost:5173) in a Web3-enabled browser.
 
 ## Architectural Notes for Evaluators
-Gas Override: The client application injects a forced 100 gwei priority fee into all transactions to bypass public RPC estimation failures during network congestion.
-Audit Ledger: Due to strict RPC historical throttling on testnets, the Audit Ledger utilizes a client-side localized cache synchronized with live Ethers.js block events.
+
+- Gas Override: The client application injects a forced 100 gwei priority fee into all transactions to bypass public RPC estimation failures during network congestion.
+
+- Audit Ledger: Due to strict RPC historical throttling on testnets, the Audit Ledger utilizes a client-side localized cache synchronized with live Ethers.js block events.
